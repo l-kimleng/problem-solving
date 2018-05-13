@@ -8,7 +8,7 @@ namespace ProblemSolving.Test
     public class SortingUnitTest
     {
         [TestMethod]
-        public void Sorting_InsertionSort_ReturnMatchedEachElements()
+        public void Sorting_InsertionSort_ReturnElementsAscending()
         {
             // Arrange
             var elements = new int[] { 1, -5, 4, 10, -9, 1, 0, 20, -8, 100, 1 };
