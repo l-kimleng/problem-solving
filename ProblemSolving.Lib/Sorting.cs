@@ -8,7 +8,7 @@ namespace ProblemSolving.Lib
 {
     public static class Sorting
     {
-        public static int[] InsertionSort(int[] elements)
+        public static int[] SelectionSort(int[] elements)
         {
             for (var i = 0; i < elements.Length; i++)
             {
