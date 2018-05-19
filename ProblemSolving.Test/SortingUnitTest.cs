@@ -18,5 +18,19 @@ namespace ProblemSolving.Test
             // Assert
             CollectionAssert.AreEqual(sortedElements, expectedElements);
         }
+
+        [TestMethod]
+        public void Sorting_InsertionSort_ReturnElementsAscending()
+        {
+            // Arrange
+            var elements = new int[] { 7, 4, 5, 2, -1, 0, 10, 2, 8, 11, 100 };
+            var expectedElements = new int[] { -1, 0, 2, 2, 4, 5, 7, 8, 10, 11, 100 };
+
+            // Act
+            var sortElements = Sorting.InsertionSort(elements);
+
+            // Assert
+            CollectionAssert.AreEqual(sortElements, expectedElements);
+        }
     }
 }

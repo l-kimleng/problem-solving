@@ -29,6 +29,20 @@ namespace ProblemSolving.Lib
             return elements;
         }
 
+        public static int[] InsertionSort(int[] elements)
+        {
+            for (var i = 1; i < elements.Length; i++)
+            {
+                var j = i;
+                while (j > 0 && elements[j] < elements[j-1])
+                {
+                    Swap(elements, j, j-1);
+                    j--;
+                }
+            }
+            return elements;
+        }
+
         private static void Swap(int[] elements, int firstIndex, int secondIndex)
         {
             if (elements[firstIndex] != elements[secondIndex])
